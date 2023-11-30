@@ -128,7 +128,7 @@ namespace ManejoPresupuesto.Controllers
 
             var idsTiposCuentasNoPertenecenAlUsuario = ids.Except(idsTiposCuentas).ToList();
 
-            if(idsTiposCuentasNoPertenecenAlUsuario.Count() > 0)
+            if (idsTiposCuentasNoPertenecenAlUsuario.Count() > 0)
             {
                 return Forbid();
             }
