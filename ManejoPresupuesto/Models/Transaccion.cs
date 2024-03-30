@@ -6,7 +6,7 @@ namespace ManejoPresupuesto.Models
     {
         public int Id { get; set; }
         public int UsuarioId { get; set; }
-        [Display(Name = "Fecha de la Transacción")]
+        [Display(Name = "Fecha Transacción")]
         [DataType(DataType.Date)]
         public DateTime FechaTransaccion { get; set; } = DateTime.Today;
         public decimal Monto { get; set; }
@@ -18,5 +18,7 @@ namespace ManejoPresupuesto.Models
         [Range(1, maximum: int.MaxValue, ErrorMessage = "Debe seleccionar una cuenta")]
         [Display(Name = "Cuenta")]
         public int CuentaId { get; set; }
+        [Display(Name = "Tipo Operación")]
+        public TipoOperacion TipoOperacionId { get; set; } = TipoOperacion.Ingreso;
     }
 }

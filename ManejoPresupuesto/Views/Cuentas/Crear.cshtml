@@ -5,10 +5,12 @@
 }
 
 <h1>Crear Cuenta</h1>
-<h5>La cuenta se refiere a los distintos balances que tienes: tarjeta de crédito, cuenta de ahorro, préstamo, etc</h5>
+<h5>
+    La cuenta se refiere a los distintos balances que tienes:
+    tarjeta de crédito, cuenta de ahorro, préstamo, etc.
+</h5>
 
 <form asp-action="Crear">
-
     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
     <div class="mb-3">
@@ -39,10 +41,6 @@
     <a class="btn btn-secondary" asp-action="Index">Cancelar</a>
 </form>
 
-@section Scripts{
+@section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }
-
-
-
-

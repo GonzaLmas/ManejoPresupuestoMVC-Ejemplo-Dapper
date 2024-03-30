@@ -5,7 +5,10 @@
 }
 
 <h1>Tipos de Cuentas</h1>
-<h5>El tipo de cuenta se refiere a cómo podemos agrupar cuentas. Ejemplos: préstamos, tarjetas de crédito, efectivo, etc</h5>
+<h5>
+    El tipo de cuenta se refiere a cómo podemos agrupar cuentas.
+    Ejemplos: Préstamos, tarjetas de crédito, etc.
+</h5>
 
 <a asp-action="Crear" class="btn btn-primary mb-3">Crear nuevo</a>
 
@@ -13,7 +16,7 @@
     <thead>
         <tr>
             <th>Acciones</th>
-            <th>Nombres</th>
+            <th>Nombre</th>
         </tr>
     </thead>
     <tbody id="reordenable">
@@ -28,12 +31,13 @@
                 <td>
                     @tipoCuenta.Nombre
                 </td>
+
             </tr>
         }
     </tbody>
 </table>
 
-@section Scripts{
+@section Scripts {
     <script>
 
         const urlOrdenar = '@Url.Action("ordenar")';
@@ -71,7 +75,4 @@
             }
         })
     </script>
-}
-
-
-
+  }
